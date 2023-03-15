@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:padding="16dp">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/shop_header_profilepic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/dummy_profile"
+        app:civ_border_width="1dp"/>
+
+    <TextView
+        android:id="@+id/shop_header_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+</LinearLayout>

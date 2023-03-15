@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopActivity.AddOfferActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="3dp">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <ImageView
+                    android:id="@+id/Today_Comboimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:background="@color/quantum_grey200" />
+
+                <ImageView
+                    android:id="@+id/pick_image_icon"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/addimage"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:id="@+id/edit_image_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/edit"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="combo name :"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <EditText
+                        android:id="@+id/Today_Comboname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="combo name"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="text" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="combo price :"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <EditText
+                        android:id="@+id/Today_Comboprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="combo price (RS)"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="combo discount (optional) :"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <EditText
+                        android:id="@+id/Today_Combodiscount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="combo discount (RS) "
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/Today_Combosellingprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="sellingprice (RS) eg : (price - discount)"
+                        android:inputType="number"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:visibility="visible"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="combo instock :"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <EditText
+                        android:id="@+id/Today_ComboAvailable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="total no of combo instock"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="number" />
+
+
+                    <Button
+                        android:id="@+id/Today_Combo_AddImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/buttons"
+                        android:text="upload combo"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/quantum_grey500"
+                        android:layout_marginTop="20dp"/>
+
+                    <Button
+                        android:id="@+id/Today_Combo_Addproduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/buttons"
+                        android:text="add products to combo "
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/Today_combo_isempty_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="no of products in combo : 0"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/red"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/quantum_grey400"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/Today_offer_product_R1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.core.widget.NestedScrollView>

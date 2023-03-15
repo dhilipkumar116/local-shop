@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/admin_producthome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="3dp">
+
+            <ImageView
+                android:id="@+id/admin_Product_Image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@drawable/loadingimage" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:cardCornerRadius="3dp"
+                android:elevation="4dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_gravity="end">
+
+                <ImageView
+                    android:id="@+id/admin_product_Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/admin_product_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="product namedfdsf"
+                android:textSize="17sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="top">
+
+
+
+                    <TextView
+                        android:id="@+id/admin_product_Quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="product quantity"
+                        android:textSize="13dp"
+                        android:textColor="@android:color/black"
+                        android:ellipsize="end"
+                        android:maxLines="1"/>
+
+
+                    <TextView
+                        android:id="@+id/admin_selling_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="selling_p"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:ellipsize="end"
+                        android:maxLines="1"/>
+
+                    <TextView
+                        android:id="@+id/admin_product_Price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MRP"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/black"
+                        android:ellipsize="end"
+                        android:maxLines="1"/>
+
+                    <TextView
+                        android:id="@+id/admin_discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="save"
+                        android:textSize="13dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:ellipsize="end"
+                        android:maxLines="1"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        app:cardCornerRadius="3dp"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp">
+
+                        <Button
+                            android:id="@+id/admin_editproductbtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttons"
+                            android:text="edit"
+                            android:textColor="@android:color/white" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        app:cardCornerRadius="3dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp">
+
+                        <Button
+                            android:id="@+id/admin_removeproductbtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="remove"
+                            android:background="@drawable/buttons"
+                            android:textColor="@android:color/white"
+                            android:layout_marginBottom="5dp"/>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

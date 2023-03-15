@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_admin_addproducts"
+            android:icon="@drawable/add_produts_icon"
+            android:title="add your products"
+            android:iconTint="@android:color/white"
+            />
+        <item
+            android:id="@+id/nav_admin_bestoffer"
+            android:icon="@drawable/offer"
+            android:title="add today's offers "
+            android:iconTint="@android:color/white"
+            />
+        <item
+            android:id="@+id/nav_admin_add_order"
+            android:icon="@drawable/addorder"
+            android:title="OTW Delivery"
+            android:iconTint="@android:color/white"
+            />
+
+        <item
+            android:id="@+id/nav_admin_order"
+            android:icon="@drawable/order_icon"
+            android:title="check orders"
+            android:iconTint="@android:color/white"
+            />
+
+        <item
+            android:id="@+id/nav_admin_setting"
+            android:icon="@drawable/setting_icon"
+            android:title="settings"
+            android:iconTint="@android:color/white"
+            />
+
+        <item
+            android:id="@+id/nav_admin_help"
+            android:icon="@drawable/coustomer_care_icon"
+            android:title="help center"
+            android:iconTint="@android:color/white"
+            />
+
+        <item
+            android:id="@+id/nav_admin_termsandcondition"
+            android:icon="@drawable/term_icon"
+            android:title="terms and conditions"
+            android:iconTint="@android:color/white"
+            />
+        <item
+            android:id="@+id/nav_admin_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="logout"
+            android:iconTint="@android:color/white"
+            />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+
+
+</menu>

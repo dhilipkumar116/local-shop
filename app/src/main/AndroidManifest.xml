@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.localshop">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name="com.example.localshop.shopActivity.SubmitAdminOrderActivity" android:label="place order"></activity>
+        <activity android:name="com.example.localshop.shopActivity.AddOrderActivity" android:label="add items"/>
+        <activity android:name="com.example.localshop.HelpActivity" android:label="help centre"/>
+        <activity
+            android:name="com.example.localshop.orderProductsActivity"
+            android:label="order products" />
+        <activity
+            android:name="com.example.localshop.TermsandCondActivity"
+            android:label="terms and conditions" />
+        <activity
+            android:name="com.example.localshop.shopActivity.NewOrderActivity"
+            android:label="new orders" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.example.localshop.PlacePickerActivity"
+            android:label="@string/title_activity_place_picker" />
+        <activity
+            android:name="com.example.localshop.shopActivity.AddOfferActivity"
+            android:label="add offer" />
+        <activity
+            android:name="com.example.localshop.shopActivity.SettingActivityS"
+            android:label="settings" />
+        <activity
+            android:name="com.example.localshop.shopActivity.AddProductActivity"
+            android:label="add product" />
+        <activity
+            android:name="com.example.localshop.AddCategoryActivity"
+            android:label="select category" />
+        <activity
+            android:name="com.example.localshop.shopActivity.HomeActivityS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <activity android:name="com.example.localshop.shopActivity.ShopForgotActivity" />
+        <activity android:name="com.example.localshop.PhoneVerificationActivity" />
+        <activity android:name="com.example.localshop.shopActivity.ShopRegisterActivity" />
+        <activity
+            android:name="com.example.localshop.shopActivity.ShopLoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

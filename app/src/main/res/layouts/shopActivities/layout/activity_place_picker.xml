@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".PlacePickerActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PlacePickerActivity" />
+
+    <ImageView
+        android:id="@+id/pick_location_marker"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/pick_marker"
+        android:layout_centerInParent="true"
+        android:translationY="-15dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/place_picker_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@drawable/curved_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/pick_confirm_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/red"
+            android:text="*choose shop location"/>
+
+        <Button
+            android:id="@+id/pick_set_location_btn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/buttons"
+            android:textColor="@android:color/white"
+            android:text="confirm"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="5dp"
+            android:outlineProvider="bounds"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+</LinearLayout>

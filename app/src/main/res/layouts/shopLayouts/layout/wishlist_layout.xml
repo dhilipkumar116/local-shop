@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="2dp"
+    android:elevation="2dp"
+    app:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="3dp"
+            android:layout_margin="3dp">
+
+            <ImageView
+                android:id="@+id/wishlist_image_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/loadingimage"/>
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/Cart_product_NameQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="name : quantity "
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/Cart_product_Noofproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="no of item : 1"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/Cart_product_Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="price"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

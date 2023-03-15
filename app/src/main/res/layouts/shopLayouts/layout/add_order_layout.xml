@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    android:elevation="2dp"
+    android:layout_margin="2dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/P_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name and quantity"
+                android:layout_marginStart="5dp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+            <TextView
+                android:id="@+id/P_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="price"
+                android:layout_marginStart="5dp"
+                android:layout_below="@id/P_name"
+                android:layout_marginTop="2dp"/>
+            <LinearLayout
+                android:id="@+id/UnavailLayout"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                android:layout_below="@id/P_name"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_below="@+id/P_name">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="2dp">
+                    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                        android:id="@+id/countBtn"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="5dp"
+                        app:finalNumber="20"
+                        app:initialNumber="1"/>
+                    <LinearLayout
+                        android:layout_marginStart="35dp"
+                        android:id="@+id/disable_count_btn_layout"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:background="@color/transparent"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/addOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

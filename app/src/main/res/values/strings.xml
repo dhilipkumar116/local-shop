@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OTW Shop</string>
+    <string name="navigation_open_drawer">Open navigation drawer</string>
+    <string name="navigation_close_drawer">Close navigation drawer</string>
+</resources>

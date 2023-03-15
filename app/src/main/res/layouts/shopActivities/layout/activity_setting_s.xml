@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopActivity.SettingActivityS">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/distribution_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/distribution_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="enter code"
+                android:maxLength="6"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:inputType="text"/>
+            <Button
+                android:id="@+id/distribution_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/buttons"
+                android:text="edit now"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/admin_setting_profile_image"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/shop_profile"
+            android:layout_marginTop="20dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@android:color/black"/>
+
+
+        <TextView
+            android:id="@+id/admin_setting_profile_image_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="change shop picture"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="shop name :"
+            android:textSize="13sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/admin_setting_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="shop name"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:inputType="text" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*note : this shop name will not change shop login name*"
+            android:textSize="13sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/red"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="shop email :"
+            android:textSize="13sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <EditText
+            android:id="@+id/admin_setting_shop_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="shop email"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="shop phone number :"
+            android:textSize="13sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <EditText
+            android:id="@+id/admin_setting_shop_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="shop phone number"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:inputType="phone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="shop password :"
+            android:textSize="13sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <EditText
+                android:id="@+id/admin_setting_shop_password"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="wrap_content"
+                android:hint="shop password"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:id="@+id/hide_pass_icon"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/hide"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="shop street name :"
+            android:textSize="13sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <EditText
+            android:id="@+id/admin_setting_shop_street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="shop street name"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="shop postal code :"
+            android:textSize="13sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <EditText
+            android:id="@+id/admin_setting_postal_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="shop postal code"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="shop district :"
+            android:textSize="13sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <EditText
+            android:id="@+id/admin_setting_shop_district"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="shop district"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="shop category :"
+            android:textSize="13sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="9">
+
+<!--            <view-->
+<!--                android:layout_below="@+id/category_shop_txt"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="@android:color/black"/>-->
+            <Spinner
+                android:id="@+id/shop_cat_spinner_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:background="@color/transparent">
+            </Spinner>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/edit_cate_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/edit_text_icon"/>
+
+
+    </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/admin_setting_update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons"
+            android:text="save changes"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

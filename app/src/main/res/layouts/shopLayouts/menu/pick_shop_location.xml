@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item
+    android:title="pick_location"
+    android:id="@+id/shop_pick_location"
+    android:icon="@drawable/edit_location_icon"
+    app:showAsAction="always"
+    android:iconTint="@color/white"/>
+</menu>

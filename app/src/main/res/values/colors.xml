@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f9c901</color>
+    <color name="colorPrimaryDark">	#f9c901</color>
+    <color name="colorAccent">#f9c901</color>
+    <color name="Adminordercolor">#fee067</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="red">#f12906</color>
+    <color name="green">#05c90b</color>
+    <color name="transparent">#00000000</color>
+    <color name="gradient_start">#f9c901</color>
+    <color name="gradient_end">#f6e000</color>
+    <color name="ripple_color">#66b5ff</color>
+
+</resources>

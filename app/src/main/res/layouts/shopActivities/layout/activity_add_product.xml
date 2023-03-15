@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopActivity.AddProductActivity">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/Productimage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:background="@color/quantum_grey200"/>
+
+            <ImageView
+                android:id="@+id/Productimage_icon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/addimage"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Productname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/Productimage"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp"
+                android:inputType="text"
+                android:padding="8dp"
+                android:hint="product name"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Productquantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/Productname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp"
+                android:padding="8dp"
+                android:inputType="number"
+                android:hint="quantity(ml/g/kg/inch/meter) Eg : 500g"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <RadioGroup
+            android:id="@+id/quantity_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp">
+
+            <RadioButton
+                android:id="@+id/kg_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kg"
+                android:layout_marginLeft="0dp"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/g_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="g"
+                android:layout_marginLeft="0dp"/>
+            <RadioButton
+                android:id="@+id/l_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="l"
+                android:layout_marginLeft="0dp"/>
+            <RadioButton
+                android:id="@+id/inch_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="inch"
+                android:layout_marginLeft="0dp"/>
+            <RadioButton
+                android:id="@+id/meter_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="meter"
+                android:layout_marginLeft="5dp"/>
+            <RadioButton
+                android:id="@+id/piece_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="piece"
+                android:layout_marginLeft="0dp"/>
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/type_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <RadioButton
+                android:id="@+id/veg_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="veg"
+                android:layout_marginLeft="20dp"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/nonveg_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nonveg"
+                android:layout_marginLeft="20dp"/>
+            <RadioButton
+                android:id="@+id/natural_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="natural"
+                android:layout_marginLeft="20dp"/>
+
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Productprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Productname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="product price in RS (MRP)"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textSize="15sp"
+                tools:ignore="NotSibling" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Productdiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Productprice"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="discount in RS(optional)"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/Productsellingprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:hint="sellingprice (Eg : MRP - discount)"
+            android:padding="8dp"
+            android:textSize="15sp" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Noofproducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Productsellingprice"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="no of product available"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Productdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/Noofproducts"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp"
+                android:padding="8dp"
+                android:hint="product description"
+                android:inputType="text"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/Upload_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="15sp"
+            android:text="Upload Product"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
